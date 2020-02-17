@@ -1,0 +1,21 @@
+server:
+  port: 80
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cxlib?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: 19921020
+  resources:
+    static-locations: classpath:static
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  mvc:
+    view:
+      prefix: classpath:static
+      suffix: .html
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: false
