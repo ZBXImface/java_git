@@ -6,6 +6,8 @@ import com.gree.book.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class BookServiceImpl implements BookService {
     @Autowired
@@ -13,5 +15,10 @@ public class BookServiceImpl implements BookService {
     @Override
     public JSONObject getBookInfoById(Integer bookId) {
         return bookDao.getBookInfoById(bookId);
+    }
+
+    @Override
+    public List<JSONObject> getBookInfo() {
+        return bookDao.getBookInfo();
     }
 }

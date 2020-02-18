@@ -6,4 +6,7 @@
     <select id="getBookInfoById" resultType="com.alibaba.fastjson.JSONObject">
         select * from ci_goods where id=#{bookId};
     </select>
+    <select id="getBookInfo" resultType="com.alibaba.fastjson.JSONObject">
+        select * from ci_goods;
+    </select>
 </mapper>

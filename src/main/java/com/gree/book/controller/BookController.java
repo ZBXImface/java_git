@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/api/book")
 public class BookController {
@@ -18,5 +20,10 @@ public class BookController {
     @ResponseBody
     public JSONObject getBookInfoById(@RequestParam("bookId") Integer bookId){
         return bookService.getBookInfoById(bookId);
+    }
+    @RequestMapping("/getBookInfo")
+    @ResponseBody
+    public List<JSONObject> getBookInfo(){
+        return bookService.getBookInfo();
     }
 }
