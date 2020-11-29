@@ -1,6 +1,7 @@
 package com.gree;
 
 import com.gree.thread.base.MyThreadExampleOne;
+import com.gree.thread.base.MyThreadExampleThree;
 import com.gree.thread.base.MyThreadExampleTwo;
 import javafx.scene.layout.Background;
 import org.springframework.boot.SpringApplication;
@@ -37,5 +38,8 @@ public class ThreadTest {
         JWindowTest.add(JPanelTest);
         JWindowTest.setName("这是我的测试窗体程序");
         JWindowTest.setVisible(true);
+        //测试线程
+        MyThreadExampleThree myThreadExampleThree=new MyThreadExampleThree();
+        myThreadExampleThree.start();
     }
 }
