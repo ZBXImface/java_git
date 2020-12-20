@@ -8,4 +8,5 @@ import java.util.List;
 @Mapper
 public interface AddressDao {
     List<Address> getAddress();
+    Integer getUserId(String userName);
 }

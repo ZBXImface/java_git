@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface AddressService {
     JSONObject getAddress();
+    JSONObject getNewName(String userId);
 }

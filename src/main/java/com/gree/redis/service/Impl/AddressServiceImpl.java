@@ -26,4 +26,15 @@ public class AddressServiceImpl implements AddressService {
             return ErrorJSON(502,"获取失败");
         }
     }
+
+    @Override
+    public JSONObject getNewName(String userId) {
+        if (userId!=null){
+            System.out.println("参数正常");
+            return null;
+        }else{
+            System.out.println("参数错误");
+            return null;
+        }
+    }
 }

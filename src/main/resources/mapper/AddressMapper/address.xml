@@ -6,4 +6,7 @@
    <select id="getAddress" resultType="com.gree.redis.entity.Address">
        select * from ci_address;
    </select>
+   <select id="getUserId" resultType="java.lang.Integer">
+       select id from user where name=#{userName};
+   </select>
 </mapper>
