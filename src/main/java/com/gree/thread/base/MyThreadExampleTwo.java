@@ -10,4 +10,7 @@ public class MyThreadExampleTwo extends Thread{
             System.out.println(name+"运行,i="+i);
         }
     }
+    public void test(){
+
+    }
 }

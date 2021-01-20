@@ -12,4 +12,8 @@ public class OrderController {
     public JSONObject getOrderDetailsById(){
         return null;
     }
+    @RequestMapping("/getOrderId")
+    public JSONObject gtOrderId(){
+        return null;
+    }
 }
