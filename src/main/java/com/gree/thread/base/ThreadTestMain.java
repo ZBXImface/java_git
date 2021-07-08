@@ -13,7 +13,6 @@ class NewThreadExtendThreadEntity extends Thread{
         super.run();
         for (int num=0;num<10;num++){
             try{
-                //
                 //this.sleep(1000);
             }catch (Exception e){
                 e.printStackTrace();
